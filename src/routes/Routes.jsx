@@ -46,7 +46,7 @@ element:<Navigate to='/catagory/0'></Navigate>
              {
                 path: ':id',
                 element: <Catagory></Catagory>,
-                loader:({params})=>fetch(`http://localhost:5000/Cetagorys/${params.id}`)
+                loader:({params})=>fetch(`https://myappfordragonserver-bxz1rmgy9-improgrammer-shuvos-projects.vercel.app/Cetagorys/${params.id}`)
             },
             {
                 path: 'About',
@@ -62,7 +62,7 @@ element:<Navigate to='/catagory/0'></Navigate>
             {
                 path:':id',
                 element:<PrivateRoute><News></News></PrivateRoute>,
-                loader:({params})=>fetch(`http://localhost:5000/news/${params.id}`)
+                loader:({params})=>fetch(`https://myappfordragonserver-bxz1rmgy9-improgrammer-shuvos-projects.vercel.app/news/${params.id}`)
                 
             }
         ]

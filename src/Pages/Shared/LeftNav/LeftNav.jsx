@@ -10,7 +10,7 @@ const LeftNav = () => {
 const [cetagorys,setCategoys]=useState([])
 
 useEffect(()=>{
-    fetch('http://localhost:5000/Cetagorys')
+    fetch('https://myappfordragonserver-bxz1rmgy9-improgrammer-shuvos-projects.vercel.app/cetagorys')
 .then(response=>response.json())
 .then(data=>setCategoys(data))
 
